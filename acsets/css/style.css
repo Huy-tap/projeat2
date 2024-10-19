@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", serif;
+}
+body {
+  font-size: 1.6rem;
+}
+
+/* =============conman=============== */
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+/* ================== header ===================== */
+
+.fixed {
+  position: sticky;
+  top: -40px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  padding-top: 57px;
+}
+.navbar {
+  display: flex;
+  column-gap: 39px;
+}
+.action-btn__signin,
+.navbar a {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+.action-btn__signin:hover,
+.navbar a:hover {
+  color: #2f3a3b;
+  text-shadow: 0 1px 1px currentColor;
+  line-height: normal;
+}
+.action-btn__signin {
+  margin-right: 12px;
+}
+
+.action-btn__signup {
+  color: #1ebfc1;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+  transition: 0.5s;
+}
+
+.action-btn__signup:hover {
+  background-color: #1ebfc1;
+  color: #fff;
+}
