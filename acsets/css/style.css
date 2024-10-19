@@ -24,6 +24,8 @@ a {
 .fixed {
   position: sticky;
   top: -40px;
+  background-color: #fff;
+  z-index: 1;
 }
 .header .container {
   display: flex;
@@ -31,7 +33,10 @@ a {
   align-items: center;
 }
 .header {
-  padding-top: 57px;
+  padding: 57px 0 10px;
+}
+.logo {
+  display: flex;
 }
 .navbar {
   display: flex;
@@ -50,10 +55,11 @@ a {
   line-height: normal;
 }
 .action-btn__signin {
-  margin-right: 12px;
+  margin-right: 24px;
 }
 
 .action-btn__signup {
+  display: inline-block;
   color: #1ebfc1;
   text-align: center;
   font-size: 1.6rem;
@@ -68,4 +74,193 @@ a {
 .action-btn__signup:hover {
   background-color: #1ebfc1;
   color: #fff;
+}
+
+/* =================hero================= */
+.hero {
+  display: flex;
+  padding: 40px 0 79px;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-content {
+  width: 39%;
+}
+.hero-content__title {
+  color: #767e7e;
+  font-size: 1.4rem;
+  line-height: normal;
+}
+
+.hero-content__heding {
+  margin-top: 18px;
+  width: 458px;
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.16;
+}
+.hero-content__desc {
+  margin-top: 46px;
+  width: 458px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  line-height: 1.78;
+}
+.hero-content__action {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  margin-top: 55px;
+}
+
+.hero-content__action--get {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 68px;
+  min-width: 186px;
+  border-radius: 14px;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+.hero-content__action--video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 62px;
+  background: #fff;
+  box-shadow: 0px 22px 55px rgba(0, 0, 0, 0.05);
+}
+
+.hero-content__action--get:hover {
+  opacity: 0.8;
+}
+
+.hero-content__action--video:hover {
+  background-color: #eee;
+  box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
+  transition: 0.5s;
+}
+
+.hero-media {
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.hero-media .thumb {
+  width: 576px;
+  height: 631px;
+}
+.hero-media .hero-courses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
+  position: absolute;
+  right: 459px;
+  top: 149px;
+  width: 157px;
+  height: 75px;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-media .hero-courses .icon {
+  position: relative;
+}
+.hero-media .hero-courses .icon::before {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 4px;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 999px;
+  top: 28px;
+  left: 4px;
+}
+.hero-media .hero-courses span {
+  width: 55px;
+}
+.hero-media .hero-schedules {
+  position: absolute;
+  right: 517px;
+  top: 453px;
+  width: 124px;
+  padding: 16px 0 23px;
+  text-align: center;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero-schedules__title {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+}
+.hero-schedules .dash1 {
+  margin-top: 16px;
+}
+.hero-schedules .dash2 {
+  margin-top: 12px;
+}
+.hero-schedules .dash2 {
+  margin-top: 10px;
+}
+.hero-schedules .end {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.hero-media .hero-active {
+  position: absolute;
+  right: 45px;
+  top: 500px;
+  background-color: #fefefd;
+  width: 207px;
+  padding: 17px 0;
+  border-radius: 24px;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero-active__title {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.hero-student {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.hero-active .avatar {
+  display: flex;
+  margin-left: -7px;
+}
+.hero-active span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -7px;
+  width: 33px;
+  height: 33px;
+  border-radius: 33px;
+  background-color: #1ebfc1;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.hero-media .hero-active .avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 33px;
 }
