@@ -450,7 +450,7 @@ a {
 
 /* ================feedback=========================== */
 .feedback {
-  padding: 63px 0 60px;
+  padding: 63px 0 130px;
 }
 .feedback .body {
   position: relative;
@@ -534,4 +534,87 @@ a {
 .feedback .avatar6 {
   top: 374px;
   right: 32px;
+}
+/* =======================admit================== */
+
+.admit {
+  background: #def6f5;
+}
+.admit .body {
+  padding: 76px 0 88px;
+  display: flex;
+  align-items: center;
+}
+
+.admit-desc {
+  margin-top: 18px;
+  margin-right: 410px;
+}
+.admit-btn {
+  min-width: 186px;
+  line-height: 68px;
+  text-align: center;
+  border-radius: 14px;
+  background: #2ac9bf;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.admit-btn:hover {
+  opacity: 0.8;
+}
+/* ===================footer============== */
+.footer {
+  background: #fff;
+}
+.footer .body {
+  padding: 131px 0 80px;
+}
+.column-title {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: normal;
+}
+.row-top {
+  display: flex;
+  justify-content: space-between;
+}
+.row-list {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.column .row-list a {
+  color: #535353;
+  line-height: normal;
+}
+.column .row-list {
+  margin-top: 25px;
+}
+.column .row-list li {
+  margin-top: 18px;
+}
+.column .row-list li:first-child {
+  margin-top: 0;
+}
+.column .item5 {
+  margin-top: 20px;
+}
+.item5 li img {
+  margin-right: 9px;
+}
+.copy-right {
+  padding-bottom: 50px;
+  text-align: center;
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  line-height: normal;
 }
